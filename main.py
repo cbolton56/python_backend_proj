@@ -25,3 +25,4 @@ def create_posts(new_post: Post):
     print(new_post.title)
     print(new_post.content)
     return {"data":"new post"} 
+    
