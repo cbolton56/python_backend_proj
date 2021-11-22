@@ -19,10 +19,10 @@ async def root():
 def get_post(): 
     return {"data":"This is your posts"}
 
-@app.post("/createposts")
+@app.post("/posts")
 def create_posts(new_post: Post):
     print(new_post)
     print(new_post.title)
     print(new_post.content)
-    return {"data":"new post"} 
+    return {"data": new_post} 
     
